@@ -1,0 +1,66 @@
+body {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #3a3a3a;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    min-width: 600px;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #61dafb;
+    text-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+}
+
+.display-text {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    min-height: 3rem;
+}
+
+.display-sub {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    min-height: 1.5rem;
+}
+
+/* タイピングの状態用クラス */
+.typed {
+    color: #4caf50; /* 緑 */
+}
+
+.untyped {
+    color: #aaaaaa;
+}
+
+.error-bg {
+    background-color: rgba(255, 0, 0, 0.2);
+    transition: background-color 0.1s;
+}
+
+/* 揺れるアニメーション */
+.shake {
+    animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
